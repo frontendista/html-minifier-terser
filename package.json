@@ -1,0 +1,19 @@
+{
+	"name": "@frontendista/html-terser-minifier",
+	"version": "0.1.0",
+	"description": "HTML minifier that uses LightningCSS and ESBuild",
+	"scripts": {
+		"dev": "tsup --watch",
+		"build": "tsup"
+	},
+	"dependencies": {
+		"esbuild": "^0.18.15",
+		"html-minifier-terser": "^7.2.0",
+		"lightningcss": "^1.21.5"
+	},
+	"devDependencies": {
+		"@types/html-minifier-terser": "^7.0.0",
+		"tsup": "^7.1.0",
+		"typescript": "^5.1.6"
+	}
+}
