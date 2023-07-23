@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preload" href="/fonts/rubik.roman.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="canonical" href="https://frontendista.cz/">
+    <meta name="robots" content="all">
+    <title>Pavel Sušický – Front-end developer, Creator &amp; Tinkerer</title>
+    <meta name="description" content="Pavel Sušický is a young Front-end developer from Prague, Czech Republic. He develops modern web applications and loves sports, music and dancing.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Pavel Sušický">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@thesoreon">
+    <meta name="twitter:creator" content="@thesoreon">
+    <meta name="og:title" content="Pavel Sušický – Front-end developer, Creator &#38; Tinkerer">
+    <meta name="og:description" content="Pavel Sušický is a young Front-end developer from Prague, Czech Republic. He develops modern web applications and loves sports, music and dancing.">
+    <meta name="og:image" content="https://frontendista.cz/images/og-default.jpg">
+    <meta name="og:image:secure_url" content="https://frontendista.cz/images/og-default.jpg">
+    <meta name="og:image:alt" content="Artistic depiction of words 'Frontendista' and 'Pavel Sušický'">
+    <meta name="og:image:type" content="image/jpeg">
+    <meta name="og:image:width" content="2400">
+    <meta name="og:image:height" content="1260">
+    <meta name="og:url" content="https://frontendista.cz/">
+    <meta name="og:type" content="website">
+    <script type="application/ld+json">
+      [{
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pavel Sušický",
+        "url": "https://frontendista.cz/",
+        "jobTitle": "Front-end developer",
+        "alumniOf": "Czech Technical University in Prague",
+        "gender": "male",
+        "image": "https://frontendista.cz/images/og-default.jpg",
+        "sameAs": ["https://github.com/susickypavel", "https://linkedin.com/in/susickypavel", "https://twitter.com/susickypavel", "https://figma.com/@susickypavel", "https://dev.to/susickypavel"]
+      }]
+    </script>
+    <style>
+      @font-face {
+        font-family: Rubik;
+        font-weight: 100 900;
+        font-display: swap;
+        font-style: normal;
+        src: url(/fonts/rubik.roman.woff2)format("woff2")
+      }
+
+      @font-face {
+        font-family: Rubik;
+        font-weight: 100 900;
+        font-display: swap;
+        font-style: italic;
+        src: url(/fonts/rubik.italic.woff2)format("woff2")
+      }
+
+      body {
+        font-family: Rubik, Arial, Helvetica, sans-serif
+      }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c026d3">
+    <meta name="msapplication-TileColor" content="#c026d3">
+    <meta name="theme-color" content="#c026d3">
+    <link rel="stylesheet" href="/assets/9e43e4d8.css" />
+    <link rel="stylesheet" href="/assets/82f7c498.css" />
+    <link rel="stylesheet" href="/assets/83577d4b.css" />
+  </head>
+  <body>
+    <a class="_13cf3i60 _13cf3i65 fc40270" draggable="false" href="#main">Skip to content</a>
+    <main>
+      <style>
+        astro-island,
+        astro-slot {
+          display: contents
+        }
+      </style>
+      <script>
+        var l;
+        (self.Astro = self.Astro || {}).visible = (t, e, s) => {
+          const r = async () => {
+            await (await t())()
+          };
+          let i = new IntersectionObserver((t => {
+            for (const e of t)
+              if (e.isIntersecting) {
+                i.disconnect(), r();
+                break
+              }
+          }));
+          for (let t = 0; t < s.children.length; t++) {
+            const e = s.children[t];
+            i.observe(e)
+          }
+        }, window.dispatchEvent(new Event("astro:visible")); {
+          const t = {
+              0: t => t,
+              1: t => JSON.parse(t, e),
+              2: t => new RegExp(t),
+              3: t => new Date(t),
+              4: t => new Map(JSON.parse(t, e)),
+              5: t => new Set(JSON.parse(t, e)),
+              6: t => BigInt(t),
+              7: t => new URL(t),
+              8: t => new Uint8Array(JSON.parse(t)),
+              9: t => new Uint16Array(JSON.parse(t)),
+              10: t => new Uint32Array(JSON.parse(t))
+            },
+            e = (e, s) => {
+              if ("" === e || !Array.isArray(s)) return s;
+              const [r, i] = s;
+              return r in t ? t[r](i) : void 0
+            };
+          customElements.get("astro-island") || customElements.define("astro-island", ((l = class extends HTMLElement {
+            constructor() {
+              super(...arguments), this.hydrate = () => {
+                if (!this.hydrator || this.parentElement && this.parentElement.closest("astro-island[ssr]")) return;
+                const t = this.querySelectorAll("astro-slot"),
+                  s = {},
+                  r = this.querySelectorAll("template[data-astro-template]");
+                for (const t of r) {
+                  const e = t.closest(this.tagName);
+                  !e || !e.isSameNode(this) || (s[t.getAttribute("data-astro-template") || "default"] = t.innerHTML, t.remove())
+                }
+                for (const e of t) {
+                  const t = e.closest(this.tagName);
+                  !t || !t.isSameNode(this) || (s[e.getAttribute("name") || "default"] = e.innerHTML)
+                }
+                const i = this.hasAttribute("props") ? JSON.parse(this.getAttribute("props"), e) : {};
+                this.hydrator(this)(this.Component, i, s, {
+                  client: this.getAttribute("client")
+                }), this.removeAttribute("ssr"), window.removeEventListener("astro:hydrate", this.hydrate), window.dispatchEvent(new CustomEvent("astro:hydrate"))
+              }
+            }
+            connectedCallback() {
+              !this.hasAttribute("await-children") || this.firstChild ? this.childrenConnectedCallback() : new MutationObserver(((t, e) => {
+                e.disconnect(), this.childrenConnectedCallback()
+              })).observe(this, {
+                childList: !0
+              })
+            }
+            async childrenConnectedCallback() {
+              window.addEventListener("astro:hydrate", this.hydrate);
+              let t = this.getAttribute("before-hydration-url");
+              t && await import(t), this.start()
+            }
+            start() {
+              const t = JSON.parse(this.getAttribute("opts")),
+                e = this.getAttribute("client");
+              void 0 !== Astro[e] ? Astro[e]((async () => {
+                const t = this.getAttribute("renderer-url"),
+                  [e, {
+                    default: s
+                  }] = await Promise.all([import(this.getAttribute("component-url")), t ? import(t) : () => () => {}]),
+                  r = this.getAttribute("component-export") || "default";
+                if (r.includes(".")) {
+                  this.Component = e;
+                  for (const t of r.split(".")) this.Component = this.Component[t]
+                } else this.Component = e[r];
+                return this.hydrator = s, this.hydrate
+              }), t, this) : window.addEventListener(`astro:${e}`, (() => this.start()), {
+                once: !0
+              })
+            }
+            attributeChangedCallback() {
+              this.hydrator && this.hydrate()
+            }
+          }).observedAttributes = ["props"], l))
+        }
+      </script>
+      <section id="main" class="_15u5gm40 bpq7lg0">
+        <header>
+          <h1 class="bpq7lg3">
+            <span data-sr="true">Frontendista</span>
+          </h1>
+        </header>
+        <p>I’m Pavel Sušický, a Front-end developer based in Czech Republic.</p>
+        <p>Undergraduate at Czech Technical University in Prague.</p>
+        <p>I like iron pumping and I do love music &amp; dancing.</p>
+        <footer class="bpq7lg1">
+          <ul class="bpq7lg2">
+            <li>
+              <a class="_13cf3i60 _13cf3i66 _13cf3i64" draggable="false" href="https://github.com/susickypavel">
+                <span data-sr="true">Visit Pavel&#39;s GitHub </span>
+                <svg aria-hidden="true">
+                  <use href="/assets/d2649ac4.svg#github"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="_13cf3i60 _13cf3i66 _13cf3i64" draggable="false" href="https://linkedin.com/in/susickypavel">
+                <span data-sr="true">Visit Pavel&#39;s LinkedIn </span>
+                <svg aria-hidden="true">
+                  <use href="/assets/d2649ac4.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="_13cf3i60 _13cf3i66 _13cf3i64" draggable="false" href="https://twitter.com/susickypavel">
+                <span data-sr="true">Visit Pavel&#39;s Twitter </span>
+                <svg aria-hidden="true">
+                  <use href="/assets/d2649ac4.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="_13cf3i60 _13cf3i66" draggable="false" href="/doc/pavel-susicky-resume-en.pdf">Résumé <svg aria-hidden="true">
+              <use href="/assets/d2649ac4.svg#arrow-down-tray"></use>
+            </svg>
+          </a>
+          <a class="_13cf3i60 _13cf3i65" draggable="false" href="https://thesoreon.com">Old blog <svg aria-hidden="true">
+              <use href="/assets/d2649ac4.svg#arrow-long-right"></use>
+            </svg>
+          </a>
+        </footer>
+        <div aria-hidden="true" class="bpq7lg4">
+          <span>Explore</span>
+          <svg height="1em" width="1em">
+            <use href="/assets/d2649ac4.svg#chevron-down"></use>
+          </svg>
+        </div>
+      </section>
+      <section id="projects" class="_15u5gm40 q8ca310">
+        <header>
+          <h1 class="aemgrj0 aemgrj1">
+            <a class="aemgrj3" href="#projects">Projects</a>
+          </h1>
+        </header>
+        <div class="q8ca311">
+          <span style="--r:1" class="q8ca314"></span>
+          <span style="--r:2" class="q8ca314"></span>
+          <span style="--r:3" class="q8ca314"></span>
+          <article class="_110w0zi0" style="--r:1">
+            <header class="_110w0zi5">
+              <picture>
+                <source type="image/avif" srcset="/assets/6e289e45_CuQF6.avif 1920w,/assets/6e289e45_Z1tzIwU.avif 1024w,/assets/6e289e45_Zh91Ib.avif 768w,/assets/6e289e45_Wzb9i.avif 512w" sizes="(max-width: 64em) calc(100vw - 2 * 1.25rem - 2 * 2rem), calc(100vw / 2 - 4rem - 1rem * 2 - 5rem)">
+                <source type="image/webp" srcset="/assets/6e289e45_1lPFCR.webp 1920w,/assets/6e289e45_ZKeTz9.webp 1024w,/assets/6e289e45_rbMeA.webp 768w,/assets/6e289e45_1FU074.webp 512w" sizes="(max-width: 64em) calc(100vw - 2 * 1.25rem - 2 * 2rem), calc(100vw / 2 - 4rem - 1rem * 2 - 5rem)">
+                <source type="image/jpeg" srcset="/assets/6e289e45_ZWcKMK.jpg 1920w,/assets/6e289e45_Z2kqzz.jpg 1024w,/assets/6e289e45_k2Q6D.jpg 768w,/assets/6e289e45_Qv2dc.jpg 512w" sizes="(max-width: 64em) calc(100vw - 2 * 1.25rem - 2 * 2rem), calc(100vw / 2 - 4rem - 1rem * 2 - 5rem)">
+                <img src="/assets/6e289e45_ZWcKMK.jpg" loading="lazy" decoding="async" alt="Thumbnail for Frontendista.cz project" class="_110w0zi4" width="2400" height="1260">
+              </picture>
+              <h1 class="aemgrj0 aemgrj2 _110w0zi1">Frontendista.cz</h1>
+            </header>
+            <p>It&#39;s essential to market yourself on the internet, so I created a personal website/portfolio and a blog for my future endeavours. It can also be interpreted as a collection of my knowledge from my Front-end studies.</p>
+            <ul class="_110w0zi2">
+              <li>TypeScript</li>
+              <li>Astro</li>
+              <li>SolidJS</li>
+            </ul>
+            <footer class="_110w0zi3">
+              <a class="_13cf3i60 _13cf3i65" draggable="false" href="https://frontendista.cz">See website <svg aria-hidden="true">
+                  <use href="/assets/d2649ac4.svg#arrow-long-right"></use>
+                </svg>
+              </a>
+            </footer>
+          </article>
+          <article class="_110w0zi0" style="--r:2">
+            <header class="_110w0zi5">
+              <picture>
+                <source type="image/avif" srcset="/assets/a6b8e856_Zvmj3.avif 1920w,/assets/a6b8e856_1NHOA3.avif 1024w,/assets/a6b8e856_26K5UQ.avif 768w,/assets/a6b8e856_1E1qxd.avif 512w" sizes="(max-width: 64em) calc(100vw - 2 * 1.25rem - 2 * 2rem), calc(100vw / 2 - 4rem - 1rem * 2 - 5rem)">
+                <source type="image/webp" srcset="/assets/a6b8e856_HOrDI.webp 1920w,/assets/a6b8e856_2x3DxO.webp 1024w,/assets/a6b8e856_Z2f6dUj.webp 768w,/assets/a6b8e856_2nmfuY.webp 512w" sizes="(max-width: 64em) calc(100vw - 2 * 1.25rem - 2 * 2rem), calc(100vw / 2 - 4rem - 1rem * 2 - 5rem)">
+                <source type="image/jpeg" srcset="/assets/a6b8e856_ZXsxt3.jpg 1920w,/assets/a6b8e856_Z23UpeV.jpg 1024w,/assets/a6b8e856_ZJhM1n.jpg 768w,/assets/a6b8e856_ZqayXU.jpg 512w" sizes="(max-width: 64em) calc(100vw - 2 * 1.25rem - 2 * 2rem), calc(100vw / 2 - 4rem - 1rem * 2 - 5rem)">
+                <img src="/assets/a6b8e856_ZXsxt3.jpg" loading="lazy" decoding="async" alt="Thumbnail for Figma stripes plugin project" class="_110w0zi4" width="2300" height="1378">
+              </picture>
+              <h1 class="aemgrj0 aemgrj2 _110w0zi1">Figma stripes plugin</h1>
+            </header>
+            <p>I&#39;m a heavy user of Figma, and so it happens I stumble upon a few shortcomings of its features. One was a generation of striped backgrounds, so I created a new plugin that handles it.</p>
+            <ul class="_110w0zi2">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Figma API</li>
+              <li>Linear Algebra</li>
+            </ul>
+            <footer class="_110w0zi3">
+              <a class="_13cf3i60 _13cf3i65" draggable="false" href="https://www.figma.com/community/plugin/976173007149517845/Zebra---Striped-backgrounds">See in marketplace <svg aria-hidden="true">
+                  <use href="/assets/d2649ac4.svg#arrow-long-right"></use>
+                </svg>
+              </a>
+            </footer>
+          </article>
+          <article class="_110w0zi0" style="--r:3">
+            <header class="_110w0zi5">
+              <picture>
+                <source type="image/avif" srcset="/assets/c632dbfa_13al4h.avif 1920w,/assets/c632dbfa_2wn01f.avif 1024w,/assets/c632dbfa_Z4nwF4.avif 768w,/assets/c632dbfa_1j2KLq.avif 512w" sizes="(max-width: 64em) calc(100vw - 2 * 1.25rem - 2 * 2rem), calc(100vw / 2 - 4rem - 1rem * 2 - 5rem)">
+                <source type="image/webp" srcset="/assets/c632dbfa_1Lva23.webp 1920w,/assets/c632dbfa_Z1OtjOU.webp 1024w,/assets/c632dbfa_DWhhH.webp 768w,/assets/c632dbfa_22nzJc.webp 512w" sizes="(max-width: 64em) calc(100vw - 2 * 1.25rem - 2 * 2rem), calc(100vw / 2 - 4rem - 1rem * 2 - 5rem)">
+                <source type="image/jpeg" srcset="/assets/c632dbfa_Z2fqovl.jpg 1920w,/assets/c632dbfa_ZIsmCA.jpg 1024w,/assets/c632dbfa_krWXR.jpg 768w,/assets/c632dbfa_Z1zSAjz.jpg 512w" sizes="(max-width: 64em) calc(100vw - 2 * 1.25rem - 2 * 2rem), calc(100vw / 2 - 4rem - 1rem * 2 - 5rem)">
+                <img src="/assets/c632dbfa_Z2fqovl.jpg" loading="lazy" decoding="async" alt="Thumbnail for Avocode Jira &#38; Confluence project" class="_110w0zi4" width="2300" height="1463">
+              </picture>
+              <h1 class="aemgrj0 aemgrj2 _110w0zi1">Avocode Jira &amp; Confluence</h1>
+            </header>
+            <p>I joined Avocode back in 2019. My mission was to enhance workflow between Avocode&#39;s handoff and customers using Atlassian&#39;s Jira &amp; Confluence software by creating new integrations for the Atlassian marketplace.</p>
+            <ul class="_110w0zi2">
+              <li>React</li>
+              <li>Redux</li>
+              <li>TypeScript</li>
+              <li>Atlassian API</li>
+            </ul>
+            <footer class="_110w0zi3">
+              <a class="_13cf3i60 _13cf3i65" draggable="false" href="https://marketplace.atlassian.com/apps/1220978/avocode-for-jira">See in marketplace <svg aria-hidden="true">
+                  <use href="/assets/d2649ac4.svg#arrow-long-right"></use>
+                </svg>
+              </a>
+            </footer>
+          </article>
+          <article class="q8ca312" style="--r:4">
+            <header>
+              <h1 class="aemgrj0 aemgrj2">Something is cooking</h1>
+            </header>
+            <p>Stay tuned by following me on social media!</p>
+            <ul class="q8ca313">
+              <li>
+                <a class="_13cf3i60 _13cf3i66" draggable="false" href="https://github.com/susickypavel">GitHub <svg aria-hidden="true">
+                    <use href="/assets/d2649ac4.svg#github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="_13cf3i60 _13cf3i66" draggable="false" href="https://linkedin.com/in/susickypavel">LinkedIn <svg aria-hidden="true">
+                    <use href="/assets/d2649ac4.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="_13cf3i60 _13cf3i66" draggable="false" href="https://twitter.com/susickypavel">Twitter <svg aria-hidden="true">
+                    <use href="/assets/d2649ac4.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section id="contact" class="_15u5gm40 _1vuxop60">
+        <header>
+          <h1 class="aemgrj0 aemgrj1">
+            <a class="aemgrj3" href="#contact">Get in touch</a>
+          </h1>
+          <p>This form sends a message to a Discord channel. Use the preview below to tweak it to your liking.</p>
+        </header>
+        <div class="_1vuxop61">
+          <astro-island uid="1F9i58" data-solid-render-id="s0" component-url="/entry.846ad525.js" component-export="ContactForm" renderer-url="/entry.13bca8cb.js" props="{&quot;i18n&quot;:[0,{&quot;name&quot;:[0,{&quot;label&quot;:[0,&quot;How do they call you?&quot;],&quot;placeholder&quot;:[0,&quot;Walter White&quot;]}],&quot;email&quot;:[0,{&quot;label&quot;:[0,&quot;Leave a contact if you want!&quot;],&quot;placeholder&quot;:[0,&quot;walter@white.com&quot;]}],&quot;message&quot;:[0,{&quot;label&quot;:[0,&quot;Leave a message!&quot;],&quot;placeholder&quot;:[0,&quot;I&#39;m not in danger, Skyler. I&#39;m the danger.&quot;]}],&quot;color&quot;:[0,{&quot;label&quot;:[0,&quot;Pick your theme!&quot;]}],&quot;image&quot;:[0,{&quot;label&quot;:[0,&quot;Thumbnail&quot;],&quot;remove&quot;:[0,&quot;Remove attached image&quot;],&quot;drop&quot;:[0,&quot;Drop image here&quot;]}],&quot;fieldset&quot;:[0,{&quot;about&quot;:[0,&quot;About you&quot;],&quot;message&quot;:[0,&quot;Message customization&quot;]}],&quot;submit&quot;:[0,&quot;Ship it&quot;],&quot;sent&quot;:[0,&quot;Sent&quot;],&quot;error&quot;:[0,&quot;Error, please try again later&quot;],&quot;sending&quot;:[0,&quot;Sending&quot;],&quot;validation&quot;:[0,{&quot;short&quot;:[0,&quot;Too short&quot;],&quot;required&quot;:[0,&quot;Required&quot;],&quot;email&quot;:[0,&quot;Invalid email&quot;],&quot;file&quot;:[0,{&quot;invalid&quot;:[0,&quot;Invalid file&quot;]}]}]}]}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;ContactForm&quot;,&quot;value&quot;:true}" await-children="">
+            <form data-hk="s00-0-0" class="_39jask0" noValidate="true">
+              <div data-hk="s00-0-1-0-0" class="zhc0jg0">
+                <div class="zhc0jg1">
+                  <label class="zhc0jg2" for="message">Leave a message!</label>
+                  <!--#-->
+                  <!--/-->
+                </div>
+                <!--#-->
+                <textarea data-hk="s00-0-1-0-2" id="message" aria-describedby="message_err" aria-invalid="false" placeholder="I'm not in danger, Skyler. I'm the danger." required minLength="10" maxLength="999" value="" name="message"></textarea>
+                <div data-hk="s00-0-1-0-3" class="_39jask2" aria-hidden="true">
+                  <!--#-->999
+                  <!--/--> /
+                  <!--#--> 999
+                  <!--/-->
+                </div>
+                <!--/-->
+              </div>
+              <fieldset data-hk="s00-0-2" class="_39jask8">
+                <legend>About you</legend>
+                <!--#-->
+                <div data-hk="s00-0-3-0-0" class="zhc0jg0">
+                  <div class="zhc0jg1">
+                    <label class="" for="name">How do they call you?</label>
+                    <!--#-->
+                    <!--/-->
+                  </div>
+                  <!--#-->
+                  <input data-hk="s00-0-3-0-2" id="name" aria-describedby="name_err" aria-invalid="false" placeholder="Walter White" minLength="2" maxLength="50" value="" name="name">
+                  <!--/-->
+                </div>
+                <!--/-->
+                <!--#-->
+                <div data-hk="s00-0-4-0-0" class="zhc0jg0">
+                  <div class="zhc0jg1">
+                    <label class="" for="email">Leave a contact if you want!</label>
+                    <!--#-->
+                    <!--/-->
+                  </div>
+                  <!--#-->
+                  <input data-hk="s00-0-4-0-2" id="email" aria-describedby="email_err" aria-invalid="false" type="email" placeholder="walter@white.com" maxLength="100" value="" name="email">
+                  <!--/-->
+                </div>
+                <!--/-->
+              </fieldset>
+              <fieldset data-hk="s00-0-5" class="_39jask8">
+                <legend>Message customization</legend>
+                <!--#-->
+                <div data-hk="s00-0-6-0-0" class="zhc0jg0">
+                  <div class="zhc0jg1">
+                    <label class="" for="color">Pick your theme!</label>
+                    <!--#-->
+                    <!--/-->
+                  </div>
+                  <!--#-->
+                  <div data-hk="s00-0-6-0-2" class="_39jask5">
+                    <select id="color" class="_39jask7" aria-describedby="color_err" aria-invalid="false" name="color">
+                      <option data-hk="s00-0-6-0-3-0" value="#fc0fc0">Ryan Gosling outrun</option>
+                      <option data-hk="s00-0-6-0-3-1" value="#01cdfe">Cynic vaporwave</option>
+                      <option data-hk="s00-0-6-0-3-2" value="#f3e600">Dystopian cyberpunk</option>
+                    </select>
+                    <div aria-hidden="true" class="_39jask6" style="background:#fc0fc0"></div>
+                  </div>
+                  <!--/-->
+                </div>
+                <!--/-->
+                <!--#-->
+                <div data-hk="s00-0-7-0-0" class="zhc0jg0">
+                  <div class="zhc0jg1">
+                    <span>Thumbnail</span>
+                    <!--#-->
+                    <!--/-->
+                  </div>
+                  <div class="efxykw6">
+                    <label class="efxykw0">
+                      <span data-sr="true">Thumbnail</span>
+                      <span class="efxykw3" aria-hidden="true">Drop image here</span>
+                      <input class="efxykw4" type="file" aria-describedby="image_err" aria-invalid="false" accept="image/jpeg, image/png, image/gif, image/webp" name="image">
+                    </label>
+                    <!--#-->
+                    <button data-hk="s00-0-7-0-3-0" type="button" draggable="false" disabled="disabled" class="_13cf3i60 _13cf3i66 _13cf3i61 efxykw5">
+                      <span data-hk="s00-0-7-0-3-1" data-sr="true">Remove attached image</span>
+                      <svg data-hk="s00-0-7-0-3-2-0" aria-hidden="true">
+                        <use href="/assets/d2649ac4.svg#octicons-16-trash"></use>
+                      </svg>
+                    </button>
+                    <!--/-->
+                  </div>
+                </div>
+                <!--/-->
+              </fieldset>
+              <div data-hk="s00-0-8" class="_39jask9">
+                <!--#-->
+                <button data-hk="s00-0-9-0" type="reset" draggable="false" disabled="disabled" class="_13cf3i60 _13cf3i66 _13cf3i61">Reset</button>
+                <!--/-->
+                <!--#-->
+                <button data-hk="s00-0-10-0" type="submit" draggable="false" class="_13cf3i60 _13cf3i65">Ship it</button>
+                <!--/-->
+              </div>
+            </form>
+          </astro-island>
+          <section class="_1vuxop62">
+            <astro-island uid="Z1nl8Jb" data-solid-render-id="s1" component-url="/entry.c4fe8631.js" component-export="DiscordMessagePreview" renderer-url="/entry.13bca8cb.js" props="{}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;DiscordMessagePreview&quot;,&quot;value&quot;:true}" await-children="">
+              <article data-hk="s10-0" class="_1b2i2v50" style="--bl-color:#fc0fc0">
+                <div class="_1b2i2v52">
+                  <header>
+                    <!--#-->
+                    <small data-hk="s10-1-0" class="_1b2i2v55"></small>
+                    <!--/-->
+                    <h1 class="_1b2i2v57">Arrival #1</h1>
+                  </header>
+                  <p class="_1b2i2v56">Message</p>
+                  <footer class="_1b2i2v53">
+                    <span>Anonymous</span>
+                    <time class="_1b2i2v54">Today at 10:10</time>
+                  </footer>
+                </div>
+                <!--#-->
+                <!--/-->
+              </article>
+            </astro-island>
+          </section>
+        </div>
+      </section>
+      <section id="music" class="_1wxt36m0">
+        <header>
+          <h1 class="aemgrj0 aemgrj1">
+            <a class="aemgrj3" href="#music">Spotify tracks</a>
+          </h1>
+          <p>Excerpt from my most recently listened-to songs.</p>
+        </header>
+        <ol class="_1wxt36m1">
+          <li>
+            <a href="https://open.spotify.com/track/5v2FVVB8e9UAk1oQ4QLAYN" class="_4qd78s0" draggable="false">
+              <article class="_4qd78s1">
+                <header class="_4qd78s4">
+                  <h1>The Last Ones</h1>
+                  <ul class="_4qd78s5">
+                    <li>Johnny Dynamite and the Bloodsuckers</li>
+                  </ul>
+                </header>
+                <picture>
+                  <source type="image/avif" srcset="/assets/ab67616d0000b2739d8bbc00a4f6e44d4cc8deba_1NryLa.avif 480w" sizes="100vw">
+                  <source type="image/webp" srcset="/assets/ab67616d0000b2739d8bbc00a4f6e44d4cc8deba_Z2qmMUs.webp 480w" sizes="100vw">
+                  <img src="/assets/ab67616d0000b2739d8bbc00a4f6e44d4cc8deba_Z2qmMUs.webp" loading="lazy" decoding="async" alt="The Last Ones by Johnny Dynamite and the Bloodsuckers cover photo" draggable="false" class="_4qd78s2" width="480" height="480">
+                </picture>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="https://open.spotify.com/track/3igEfREloyWh3Y8m4cS8QB" class="_4qd78s0" draggable="false">
+              <article class="_4qd78s1">
+                <header class="_4qd78s4">
+                  <h1>Looking For Something</h1>
+                  <ul class="_4qd78s5">
+                    <li>CASTLEBEAT</li>
+                  </ul>
+                </header>
+                <picture>
+                  <source type="image/avif" srcset="/assets/ab67616d0000b273e37ca88b27126e32af584d9e_fipmR.avif 480w" sizes="100vw">
+                  <source type="image/webp" srcset="/assets/ab67616d0000b273e37ca88b27126e32af584d9e_15Fbub.webp 480w" sizes="100vw">
+                  <img src="/assets/ab67616d0000b273e37ca88b27126e32af584d9e_15Fbub.webp" loading="lazy" decoding="async" alt="Looking For Something by CASTLEBEAT cover photo" draggable="false" class="_4qd78s2" width="480" height="480">
+                </picture>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="https://open.spotify.com/track/1bTqE9rujYY8ZEVn4BVAiA" class="_4qd78s0" draggable="false">
+              <article class="_4qd78s1">
+                <header class="_4qd78s4">
+                  <h1>Bats in the Woods</h1>
+                  <ul class="_4qd78s5">
+                    <li>Johnny Dynamite and the Bloodsuckers</li>
+                  </ul>
+                </header>
+                <picture>
+                  <source type="image/avif" srcset="/assets/ab67616d0000b273f706ffcb3e7f88237572ee25_ZUNAbA.avif 480w" sizes="100vw">
+                  <source type="image/webp" srcset="/assets/ab67616d0000b273f706ffcb3e7f88237572ee25_Z5qO4h.webp 480w" sizes="100vw">
+                  <img src="/assets/ab67616d0000b273f706ffcb3e7f88237572ee25_Z5qO4h.webp" loading="lazy" decoding="async" alt="Bats in the Woods by Johnny Dynamite and the Bloodsuckers cover photo" draggable="false" class="_4qd78s2 _4qd78s3" width="480" height="480">
+                </picture>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="https://open.spotify.com/track/4QkvD53COA5qLA7rQ1Pa7D" class="_4qd78s0" draggable="false">
+              <article class="_4qd78s1">
+                <header class="_4qd78s4">
+                  <h1>Nobody But Me</h1>
+                  <ul class="_4qd78s5">
+                    <li>The Human Beinz</li>
+                  </ul>
+                </header>
+                <picture>
+                  <source type="image/avif" srcset="/assets/ab67616d0000b2739703c57642398ca531316d3e_QdYPT.avif 480w" sizes="100vw">
+                  <source type="image/webp" srcset="/assets/ab67616d0000b2739703c57642398ca531316d3e_1GAKXd.webp 480w" sizes="100vw">
+                  <img src="/assets/ab67616d0000b2739703c57642398ca531316d3e_1GAKXd.webp" loading="lazy" decoding="async" alt="Nobody But Me by The Human Beinz cover photo" draggable="false" class="_4qd78s2" width="480" height="480">
+                </picture>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="https://open.spotify.com/track/1AOacbO5iSMxrGMihq9QDA" class="_4qd78s0" draggable="false">
+              <article class="_4qd78s1">
+                <header class="_4qd78s4">
+                  <h1>Act Like You Know</h1>
+                  <ul class="_4qd78s5">
+                    <li>Fat Larry&#39;s Band</li>
+                  </ul>
+                </header>
+                <picture>
+                  <source type="image/avif" srcset="/assets/ab67616d0000b273e88a017e11d2dc06ff391761_Z2vPSRm.avif 480w" sizes="100vw">
+                  <source type="image/webp" srcset="/assets/ab67616d0000b273e88a017e11d2dc06ff391761_Z1Ft7K3.webp 480w" sizes="100vw">
+                  <img src="/assets/ab67616d0000b273e88a017e11d2dc06ff391761_Z1Ft7K3.webp" loading="lazy" decoding="async" alt="Act Like You Know by Fat Larry's Band cover photo" draggable="false" class="_4qd78s2" width="480" height="480">
+                </picture>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="https://open.spotify.com/track/065bY5WrLvI3NN9VCK0QLe" class="_4qd78s0" draggable="false">
+              <article class="_4qd78s1">
+                <header class="_4qd78s4">
+                  <h1>Jerk</h1>
+                  <ul class="_4qd78s5">
+                    <li>Oliver Tree</li>
+                  </ul>
+                </header>
+                <picture>
+                  <source type="image/avif" srcset="/assets/ab67616d0000b273bf5af474b6ed745faf53f508_R2y94.avif 480w" sizes="100vw">
+                  <source type="image/webp" srcset="/assets/ab67616d0000b273bf5af474b6ed745faf53f508_1Hpkgn.webp 480w" sizes="100vw">
+                  <img src="/assets/ab67616d0000b273bf5af474b6ed745faf53f508_1Hpkgn.webp" loading="lazy" decoding="async" alt="Jerk by Oliver Tree cover photo" draggable="false" class="_4qd78s2 _4qd78s3" width="480" height="480">
+                </picture>
+              </article>
+            </a>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer class="_3xzkji1">
+      <div class="_3xzkji2">
+        <section>
+          <h2>Links</h2>
+          <ul>
+            <li>
+              <a class="_8mg8pa0" href="/sitemap-index.xml" draggable="false">Sitemap</a>
+            </li>
+            <li>
+              <a class="_8mg8pa0" href="https://blog.frontendista.cz" draggable="false" rel="noopener" target="_blank">Blog <svg>
+                  <use href="/assets/d2649ac4.svg#external-link"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="_8mg8pa0" href="https://thesoreon.com" draggable="false" rel="noopener" target="_blank">Old blog <svg>
+                  <use href="/assets/d2649ac4.svg#external-link"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="_8mg8pa0" href="https://github.com/frontendista/frontendista.cz/issues/new/choose" draggable="false" rel="noopener" target="_blank">Bug report <svg>
+                  <use href="/assets/d2649ac4.svg#external-link"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="_8mg8pa0" href="https://github.com/frontendista/frontendista.cz" draggable="false" rel="noopener" target="_blank">Source code <svg>
+                  <use href="/assets/d2649ac4.svg#external-link"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Languages</h2>
+          <ul>
+            <li>
+              <a class="_8mg8pa0" href="/cs" draggable="false">Czech</a>
+            </li>
+            <li aria-current="true">
+              <a class="_8mg8pa0" href="/" draggable="false">English</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Shoutouts</h2>
+          <ul>
+            <li>
+              <a class="_8mg8pa0" href="https://astro.build" draggable="false" rel="noopener" target="_blank">Astro <svg>
+                  <use href="/assets/d2649ac4.svg#external-link"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="_8mg8pa0" href="https://cloudflare.com/en-gb" draggable="false" rel="noopener" target="_blank">Cloudflare <svg>
+                  <use href="/assets/d2649ac4.svg#external-link"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="_8mg8pa0" href="https://www.solidjs.com" draggable="false" rel="noopener" target="_blank">SolidJS <svg>
+                  <use href="/assets/d2649ac4.svg#external-link"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="_8mg8pa0" href="https://vercel.com" draggable="false" rel="noopener" target="_blank">Vercel <svg>
+                  <use href="/assets/d2649ac4.svg#external-link"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="_8mg8pa0" href="https://wedos.cz" draggable="false" rel="noopener" target="_blank">Wedos <svg>
+                  <use href="/assets/d2649ac4.svg#external-link"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Socials</h2>
+          <ul>
+            <li>
+              <a class="_8mg8pa0" href="https://github.com/susickypavel" draggable="false" rel="noopener" target="_blank">GitHub <svg>
+                  <use href="/assets/d2649ac4.svg#external-link"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="_8mg8pa0" href="https://linkedin.com/in/susickypavel" draggable="false" rel="noopener" target="_blank">LinkedIn <svg>
+                  <use href="/assets/d2649ac4.svg#external-link"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="_8mg8pa0" href="https://twitter.com/susickypavel" draggable="false" rel="noopener" target="_blank">Twitter <svg>
+                  <use href="/assets/d2649ac4.svg#external-link"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="_8mg8pa0" href="https://figma.com/@susickypavel" draggable="false" rel="noopener" target="_blank">Figma <svg>
+                  <use href="/assets/d2649ac4.svg#external-link"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="_8mg8pa0" href="https://dev.to/susickypavel" draggable="false" rel="noopener" target="_blank">Dev.to <svg>
+                  <use href="/assets/d2649ac4.svg#external-link"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <small class="_3xzkji0">
+        <a class="_8mg8pa0 _3xzkji3" href="https://github.com/frontendista/frontendista.cz/releases/tag/frontend@1.7.0" draggable="false" rel="noopener" target="_blank">v1.7.0 </a>&nbsp;- All rights reserved © 2022 Pavel Sušický </small>
+    </footer>
+  </body>
+</html>
