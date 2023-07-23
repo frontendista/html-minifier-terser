@@ -2,10 +2,20 @@
 	"name": "@frontendista/html-terser-minifier",
 	"version": "0.1.0",
 	"description": "HTML minifier that uses LightningCSS and ESBuild",
+	"type": "module",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist",
+		"package.json",
+		"LICENCE.md",
+		"README.md"
+	],
 	"scripts": {
 		"dev": "tsup --watch",
 		"build": "tsup",
-		"demo": "ts-node demo/demo.ts"
+		"demo": "ts-node demo/demo.ts",
+		"prepublishOnly": "pnpm build"
 	},
 	"dependencies": {
 		"esbuild": "^0.18.15",
@@ -18,5 +28,16 @@
 		"ts-node": "^10.9.1",
 		"tsup": "^7.1.0",
 		"typescript": "^5.1.6"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/frontendista/html-minifier-terser.git"
+	},
+	"bugs": "https://github.com/frontendista/html-minifier-terser/issues",
+	"homepage": "https://github.com/frontendista/html-minifier-terser",
+	"author": {
+		"name": "Pavel Sušický",
+		"url": "https://frontendista.cz"
+	},
+	"license": "MIT"
 }

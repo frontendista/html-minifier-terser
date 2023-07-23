@@ -1,10 +1,10 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
-import { minify } from "../src";
+import { Minifier } from "../src";
 
 const html = readFileSync(resolve(__dirname, "./index.html"), "utf-8");
 
-minify(html).then((compressed) => {
+new Minifier().minify(html).then((compressed) => {
 	writeFileSync(resolve(__dirname, "./index.min.html"), compressed);
 });
