@@ -23,7 +23,8 @@ export const DEFAULT_HTML_OPTIONS: Partial<Options> = {
 	processScripts: ["application/ld+json"],
 	removeRedundantAttributes: true,
 	removeScriptTypeAttributes: true,
-	removeStyleLinkTypeAttributes: true
+	removeStyleLinkTypeAttributes: true,
+	conservativeCollapse: true
 };
 
 export const DEFAULT_CSS_OPTIONS: Partial<TransformAttributeOptions> = {};
