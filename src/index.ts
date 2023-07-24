@@ -12,6 +12,8 @@ import {
 	type TerserOptions
 } from "./options";
 
+export type { TerserOptions, LightningCSSOptions, ESBuildOptions } from "./options";
+
 export class Minifier {
 	constructor(
 		private htmlOptions = DEFAULT_HTML_OPTIONS,
