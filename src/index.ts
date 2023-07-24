@@ -1,17 +1,46 @@
 import { minify as minifyHTML } from "html-minifier-terser";
-import { transformStyleAttribute, transform, type Targets } from "lightningcss";
+import { transformStyleAttribute, transform } from "lightningcss";
 import { transformSync } from "esbuild";
 
-import { DEFAULT_HTML_OPTIONS } from "./options";
+import {
+	DEFAULT_CSS_OPTIONS,
+	DEFAULT_HTML_OPTIONS,
+	DEFAULT_JS_OPTIONS,
+	type ESBuildOptions,
+	type LightningCSSOptions,
+	type TerserOptions
+} from "./options";
 
 export class Minifier {
-	constructor(private targets?: Targets) {}
+	constructor(
+		private htmlOptions = DEFAULT_HTML_OPTIONS,
+		private cssOptions = DEFAULT_CSS_OPTIONS,
+		private jsOptions = DEFAULT_JS_OPTIONS
+	) {}
+
+	public withHTMLOptions(options: TerserOptions) {
+		this.htmlOptions = Object.assign(this.htmlOptions, options);
+
+		return this;
+	}
+
+	public withCSSOptions(options: LightningCSSOptions) {
+		this.cssOptions = Object.assign(this.cssOptions, options);
+
+		return this;
+	}
+
+	public withJSOptions(options: ESBuildOptions) {
+		this.jsOptions = Object.assign(this.jsOptions, options);
+
+		return this;
+	}
 
 	public minify(html: string) {
 		return minifyHTML(html, {
-			minifyCSS: this.minifyCSS,
-			minifyJS: this.minifyJS,
-			...DEFAULT_HTML_OPTIONS
+			minifyCSS: this.minifyCSS.bind(this),
+			minifyJS: this.minifyJS.bind(this),
+			...this.htmlOptions
 		});
 	}
 
@@ -23,13 +52,13 @@ export class Minifier {
 				? transformStyleAttribute({
 						code,
 						minify: true,
-						targets: this.targets
+						...this.cssOptions
 				  })
 				: transform({
 						filename: "",
 						minify: true,
 						code,
-						targets: this.targets
+						...this.cssOptions
 				  });
 
 		return result.code.toString("utf8");
@@ -37,7 +66,8 @@ export class Minifier {
 
 	private minifyJS(js: string, inline: boolean) {
 		const result = transformSync(js, {
-			minify: true
+			minify: true,
+			...this.jsOptions
 		});
 
 		return result.code;

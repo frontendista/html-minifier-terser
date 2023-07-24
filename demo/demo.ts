@@ -5,6 +5,12 @@ import { Minifier } from "../src";
 
 const html = readFileSync(resolve(__dirname, "./index.html"), "utf-8");
 
-new Minifier().minify(html).then((compressed) => {
+const minifier = new Minifier().withCSSOptions({
+	targets: {
+		chrome: 10
+	}
+});
+
+minifier.minify(html).then((compressed) => {
 	writeFileSync(resolve(__dirname, "./index.min.html"), compressed);
 });
