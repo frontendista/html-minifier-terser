@@ -2,6 +2,7 @@
 	"compilerOptions": {
 		"strict": true,
 		"noUncheckedIndexedAccess": true,
+		"esModuleInterop": true,
 		"moduleResolution": "Node",
 		"module": "CommonJS",
 		"target": "ESNext"

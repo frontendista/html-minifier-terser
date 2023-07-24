@@ -6,9 +6,7 @@ import { Minifier } from "../src";
 const html = readFileSync(resolve(__dirname, "./index.html"), "utf-8");
 
 const minifier = new Minifier().withCSSOptions({
-	targets: {
-		chrome: 10
-	}
+	browserslist: "Chrome 101"
 });
 
 minifier.minify(html).then((compressed) => {

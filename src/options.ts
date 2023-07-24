@@ -2,7 +2,12 @@ import type { Options } from "html-minifier-terser";
 import type { TransformAttributeOptions } from "lightningcss";
 import type { TransformOptions } from "esbuild";
 
-export type LightningCSSOptions = Pick<TransformAttributeOptions, "targets" | "visitor" | "analyzeDependencies">;
+export type LightningCSSOptions = Pick<TransformAttributeOptions, "targets" | "visitor" | "analyzeDependencies"> & {
+	/**
+	 * NOTE: browserslist takes precendece over targets
+	 */
+	browserslist?: string;
+};
 export type TerserOptions = Partial<Omit<Options, "minifyCSS" | "minifyJS">>;
 export type ESBuildOptions = Partial<TransformOptions>;
 

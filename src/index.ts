@@ -1,5 +1,6 @@
 import { minify as minifyHTML } from "html-minifier-terser";
-import { transformStyleAttribute, transform } from "lightningcss";
+import { transformStyleAttribute, transform, browserslistToTargets } from "lightningcss";
+import bl from "browserslist";
 import { transformSync } from "esbuild";
 
 import {
@@ -24,8 +25,12 @@ export class Minifier {
 		return this;
 	}
 
-	public withCSSOptions(options: LightningCSSOptions) {
+	public withCSSOptions({ browserslist, ...options }: LightningCSSOptions) {
 		this.cssOptions = Object.assign(this.cssOptions, options);
+
+		if (browserslist) {
+			this.cssOptions.targets = browserslistToTargets(bl(browserslist));
+		}
 
 		return this;
 	}
