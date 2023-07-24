@@ -1,6 +1,6 @@
 {
 	"name": "@frontendista/html-minifier-terser",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "HTML minifier that uses LightningCSS and ESBuild",
 	"type": "module",
 	"main": "dist/index.js",
