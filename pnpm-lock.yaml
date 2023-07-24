@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@types/html-minifier-terser':
+    specifier: ^7.0.0
+    version: 7.0.0
   browserslist:
     specifier: ^4.21.9
     version: 4.21.9
@@ -19,9 +22,6 @@ dependencies:
     version: 1.21.5
 
 devDependencies:
-  '@types/html-minifier-terser':
-    specifier: ^7.0.0
-    version: 7.0.0
   '@types/node':
     specifier: ^20.4.4
     version: 20.4.4
@@ -301,7 +301,7 @@ packages:
 
   /@types/html-minifier-terser@7.0.0:
     resolution: {integrity: sha512-hw3bhStrg5e3FQT8qZKCJTrzt/UbEaunU1xRWJ+aNOTmeBMvE3S4Ml2HiiNnZgL8izu0LFVkHUoPFXL1s5QNpQ==}
-    dev: true
+    dev: false
 
   /@types/node@20.4.4:
     resolution: {integrity: sha512-CukZhumInROvLq3+b5gLev+vgpsIqC2D0deQr/yS1WnxvmYLlJXZpaQrQiseMY+6xusl79E04UjWoqyr+t1/Ew==}
